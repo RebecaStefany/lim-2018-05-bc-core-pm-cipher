@@ -6,8 +6,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <header>
+      <h1>¡¡¡CIFRADO CAESAR!!!🙌</h1>
+    </header>
+      <section>
+        <div class="contenedor">
+          <h4>Ingrese su texto a Cifrar o Descrifrar</h4>
+          <textarea name="" id="textoCifrar" placeholder="Ingrese su Texto a Cifrar o Descifrar"></textarea><br><br>
+          <p>¿Cuantos espacios deseas desplazar?</p>
+          <input type="number" id="numeroDesplazar" value="0"><br><br>
+          <input type="submit" value="Cifrar" onclick="cipher()">
+          <input type="submit" value="Descifrar" onclick="decipher()">
+        </div>  
+        <div class="contenedor">
+          <h2>Resultados</h2>
+          <textarea name="" id="Resultados"></textarea>
+        </div>
+        <script src="cipher.js"></script>
+        <script src="index.js"></script>
+      </section>
+  <footer>
+
+
+  </footer>
+
+
   </body>
 </html>
