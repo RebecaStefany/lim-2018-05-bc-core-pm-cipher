@@ -35,5 +35,10 @@ window.cipher = {
       descifrado += String.fromCharCode(formula);
     }
     return descifrado;
+  },
+  createCipherWithOffset: (offset, string) =>{
+    return encode;
+    return decode;
   }
+
 };
