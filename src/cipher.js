@@ -36,9 +36,9 @@ window.cipher = {
     }
     return descifrado;
   },
+  
   createCipherWithOffset: (offset, string) =>{
     return encode;
     return decode;
   }
-
 };
