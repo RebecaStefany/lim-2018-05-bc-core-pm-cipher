@@ -12,31 +12,26 @@
       </div>
     </header>
       <section>
-        <div class="contenedorPrincipal">
-          <div class="informacion">
-            <img src="images/cipher.png" alt="">
+        <div id="contenedorPrincipal">
+          <div class="imagen">
+                <div><img src="images/cipher.png" width="" alt=""></div>
           </div>
-          <div class="informacion">
+          <div class="contenido">
             <div><label>Ingrese su texto a Cifrar o Descrifrar</label><br>
             <textarea name="" id="text" placeholder="Ingrese su Texto a Cifrar o Descifrar"></textarea><br><br></div>
             <div><label>¿Cuantos espacios deseas desplazar?</label>
             <input type="number" id="valor" value="0" min="0"></div><br>
-            <div><button type="submit" id="encode" value="">Cifrar</button>
-            <button type="submit" id="decode" value="">Descifrar</button></div>
+            <div><button type="submit" id="encode" value=""><img src="images/bloqueado.ico"/>Cifrar</button>
+            <button type="submit" id="decode" value=""><img src="images/desbloqueado.png"/>Descifrar</button></div>
             <div class="contenedorResultado">
             <div><label>Resultados</label><br>
             <textarea name="" id="result"></textarea></div>
             </div>
-          </div>  
+          </div>
+          <div class="pie"></div>
         </div>  
         <script src="cipher.js"></script>
         <script src="index.js"></script>
       </section>
-  <footer>
-
-
-  </footer>
-
-
   </body>
 </html>
