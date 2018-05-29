@@ -36,9 +36,17 @@ window.cipher = {
     }
     return descifrado;
   },
-  
-  createCipherWithOffset: (offset, string) =>{
-    return encode;
-    return decode;
+   
+  createCipherWithOffset: (offset) =>{
+    return window.CipherWithOffset = {
+
+      encode:()=>{
+            return cipher.encode;
+          },
+          
+      decode:()=>{
+            return cipher.decode;
+          }
+  };
   }
 };
