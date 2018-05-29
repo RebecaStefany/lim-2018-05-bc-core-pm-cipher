@@ -8,10 +8,10 @@ window.cipher = {
       let formula;
       if((ascii>=65) && (ascii<=90)){
         formula = (ascii-65+offset)%26+65;
-      } else if((ascii>=97) && (ascii<=120)){
+      } else if((ascii>=97) && (ascii<=122)){
         formula = (ascii-97+offset)%26+97;
-      }else{
-        formula=ascii;
+      } else{
+        formula = ascii;
       }
       cifrado += String.fromCharCode(formula);
     }

@@ -1,6 +1,6 @@
 .title {
-    font-family: 'gill', sans-serif;
-    text-align: center;
+    font-family: "Roboto";
+    text-align: left;
     font-size: 30px;
     line-height: 0.75;
     letter-spacing: 0.02em;
@@ -8,6 +8,7 @@
     color: #DB7093;
     padding-top: 35px;
     font-weight: bold;
+    padding-left: 50px;
 
 }
 .title span {
@@ -17,7 +18,8 @@
 }
 
 .content {
-    background: #FFD700;
+    
+    background: #212F3C;
     width: 100%;
     height: 86px;
 }
@@ -29,26 +31,33 @@ body{
     width: 100%;
     height: 100%;
     margin: 0 auto 0 auto; 
-    text-align: left;
+    text-align: center;
     background: #666666;
 }
 .imagen{ 
+    height: 450px;
+    text-align: center;
     width: 50%;
     float: left; 
-    margin-bottom: 70px;
     background: #DB7093;
 }
 .contenido{ 
+    height: 450px;
     text-align: center;
     width: 50%;
     float: left; 
     text-transform: uppercase;
     background: #008080;
 }
+
+
+
+
+
 .pie{ 
     clear: both; 
     height: 100px;
-    background: #FFD700;
+    background: #212F3C;
 }
 
 Button {
