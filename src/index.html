@@ -5,11 +5,15 @@
     <title>CaesarCipher</title>
     <link rel="stylesheet" href="style.css" />
     <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
   </head>
   <body>
     <header>
       <div class="content">
-      <div class="title"><label>¡CAESAR<span>Cipher!</span></label>
+        <div class="title"><label>¡CAESAR<span>Cipher!</span></label>
+        <div class="textbuscar"><input type="text" placeholder="Buscar"></div>
+        <div class="imagencontent"><img src="../imagenes/search.png"></div>
       </div>
     </header>
       <section>
@@ -18,14 +22,14 @@
                 <div class="style-img"><img src="../imagenes/big-data.png"></div>
           </div>
           <div class="contenido" >
-            <div><label class="stylecontent">Ingrese su texto a Cifrar o Descrifrar</label><br><br>
+            <div class="stylecontent"><label>Ingrese su texto a Cifrar o Descrifrar</label><br><br>
             <textarea name="" id="text" placeholder="Ingrese su Texto a Cifrar o Descifrar"></textarea></div><br>
-            <div><label class="stylecontent">¿Cuantos espacios deseas desplazar?</label><br><br>
-            <input type="number" id="valor" value="0" min="0"></div><br><br>
+            <div class="stylecontent"><label>¿Cuantos espacios deseas desplazar?</label><br>
+            <input type="number" id="valor" value="0" min="0"></div><br>
             <div><button type="submit" id="encode" value=""><img src="../imagenes/bloqueado.png" width="" height=""/>Cifrar</button>
             <button type="submit" id="decode" value=""><img src="../imagenes/desbloqueado.png" width="" height=""/>Descifrar</button></div><br>
             <div class="contenedorResultado">
-            <div><label class="stylecontent">Resultados</label><br><br>
+            <div class="stylecontent"><label>Resultados</label><br><br>
             <textarea name="" id="result" placeholder="Texto Cifrado o Descifrado"></textarea></div>
             </div>
           </div>
