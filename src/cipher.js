@@ -4,7 +4,7 @@ window.cipher = {
     offset = offset % 26;
     for(let i=0; i < string.length; i++){
       let ascii = string.charCodeAt(i);
-      console.log(ascii);
+      //console.log(ascii);
       let formula;
       if((ascii>=65) && (ascii<=90)){
         formula = (ascii-65+offset)%26+65;
@@ -23,7 +23,7 @@ window.cipher = {
     offset = offset % 26;
     for(let i=0; i < string.length; i++){
       let ascii = string.charCodeAt(i);
-      console.log(ascii);
+      //console.log(ascii);
       let formula;
       if((ascii>=65) && (ascii<=90)){
         formula = (ascii-65-offset+26)%26+65;
@@ -37,7 +37,7 @@ window.cipher = {
     return descifrado;
   },
    
-  createCipherWithOffset: (offset) =>{
+  createCipherWithOffset: () =>{
     return window.CipherWithOffset = {
 
       encode:()=>{

@@ -1,4 +1,10 @@
+.content {
+    background: #4682B4;
+    width: 100%;
+    height: 86px;
+}
 .title {
+    float: left;
     font-family: 'Dancing Script';
     font-size: 22px;
     text-align: left;
@@ -8,31 +14,38 @@
     /*text-transform: uppercase;*/
     color:#E6E6FA;
     padding-top: 30px;
+    padding-left: 40px;
+   
+}
+.textcontent{
+    float: left;
+    padding-left: 50%;
+    text-align: right;
+    padding-top: 30px;
+
+}
+.textobuscar {
+    width: 50%;
+    float: left;
+    text-align: right;
     padding-left: 50px;
 }
-.textbuscar{
-    float: right;
-    padding-right: 5%;
-    font-family: inherit;
-    outline: 0;
-    -webkit-appearance: none;
-    border-radius: 2px;
+.textobuscarp{
+    float: left;
 }
 .imagencontent{
-    float: right;
+    float: left;
+    padding-top: 30px;
 }
+
+
 .title span {
     color:	#FF69B4;
     font-weight: bold;
     background: rgba(120, 50, 91, 0.03);
 }
 
-.content {
-    
-    background: #4682B4;
-    width: 100%;
-    height: 86px;
-}
+
 body{ 
     text-align: center; 
 }
@@ -68,7 +81,7 @@ body{
 .stylecontent{
     font-family: 'Indie Flower';
     font-size: 14px;
-    /*font-weight: bold;*/
+    font-weight: bold;
     color: 	#808080;
     text-transform: uppercase;
     
