@@ -60,6 +60,12 @@ describe('cipher', () => {
       const withOffset = cipher.createCipherWithOffset(33)
       assert.equal(withOffset.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 'HIJKLMNOPQRSTUVWXYZABCDEFG');
     });
+
+    it('funciona', () => {
+      const withOffset = cipher.createCipherWithOffset(33)
+      assert.equal(withOffset.decode('HIJKLMNOPQRSTUVWXYZABCDEFG'), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    });
+
   });
 
 });
