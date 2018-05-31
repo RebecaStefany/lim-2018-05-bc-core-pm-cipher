@@ -2,14 +2,14 @@ window.cipher = {
   encode: (offset, string) => {
     let cifrado = '';
     offset = offset % 26;
-    for(let i=0; i < string.length; i++){
+    for(let i = 0; i < string.length; i++){
       let ascii = string.charCodeAt(i);
-      //console.log(ascii);
+      
       let formula;
-      if((ascii>=65) && (ascii<=90)){
-        formula = (ascii-65+offset)%26+65;
-      } else if((ascii>=97) && (ascii<=122)){
-        formula = (ascii-97+offset)%26+97;
+      if((ascii >= 65) && (ascii <= 90)){
+        formula = (ascii - 65 + offset)%26+65;
+      } else if((ascii >= 97) && (ascii <= 122)){
+        formula = (ascii - 97 + offset) % 26 + 97;
       } else{
         formula = ascii;
       }
@@ -23,12 +23,12 @@ window.cipher = {
     offset = offset % 26;
     for(let i=0; i < string.length; i++){
       let ascii = string.charCodeAt(i);
-      //console.log(ascii);
+    
       let formula;
-      if((ascii>=65) && (ascii<=90)){
-        formula = (ascii-65-offset+26)%26+65;
-      } else if((ascii>=97) && (ascii<=122)){
-        formula = (ascii-97-offset+26)%26+97;
+      if((ascii >= 65) && (ascii <= 90)){
+        formula = (ascii - 65 - offset + 26) % 26 + 65;
+      } else if((ascii >= 97) && (ascii <= 122)){
+        formula = (ascii - 97 - offset + 26) % 26 + 97;
       }else{
         formula = ascii;
       }
@@ -37,16 +37,16 @@ window.cipher = {
     return descifrado;
   },
    
-  createCipherWithOffset: () =>{
+  createCipherWithOffset: () => {
     return window.CipherWithOffset = {
 
-      encode:()=>{
-            return cipher.encode;
+      encode:() => {
+            return cipher.encode();
           },
           
-      decode:()=>{
-            return cipher.decode;
-          }
-  };
-  }
+      decode:() => {
+            return cipher.decode();
+          },
+    }
+  },
 };
