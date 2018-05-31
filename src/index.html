@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic SC" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -20,20 +22,34 @@
     </header>
       <section>
         <div id="contenedorPrincipal">
-          <div class="imagen">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
+          <div class="intrucciones">
+                <div class="subtitle-info"><label>PASOS PARA <span>CIFRAR/DESCIFRAR</span></label></div><br>
+                <div class="info-left"><img src="../imagenes/one.png"/><label>INTRODUCE EL <span>TEXTO</span></Label>
+                  <p>En la primera casilla (area de texto) introduce el mensaje que deseas cifrar/descifrar.</p>
+                </div>
+                <div class="info-right"><img src="../imagenes/two.png"/><Label>INTRODUCE EL NÚMERO</Label>
+                  <p>En la segunda casilla (número para cifrar/descifrar) digite el número para que tu cifrado empiece desde donde tu desees, o en el caso que desees descifrar, ingresar el digito que te han indicado.</p>
+                </div>
+                <div class="info-left"><img src="../imagenes/three.png"/><label for="">DALE CLICK</label>
+                  <p>Dale "click" en el botón según la actividad que desea realizar, cifrar o Descifrar el mensaje.</p>
+                </div>
+                <div class="info-right"><img src="../imagenes/four.png"/><label>COPIA EL TEXTO Y LISTO</label>
+                  
+                </div>
           </div>
           <div class="contenido" >
-            <div class="stylecontent"><label>Ingrese su texto a Cifrar o Descrifrar</label><br><br>
+            <div class="subtitle">
+            
+            <div class="titlecipher"><label for="">CIFRADO/DESCIFRADO</label></div>
+            </div><br>
+            <div class="stylecontent"><label>Ingrese el texto que desea Cifrar/Descrifrar:</label><br><br>
             <textarea name="" id="text" placeholder="Ingrese su Texto a Cifrar o Descifrar"></textarea></div><br>
-            <div class="stylecontent"><label>¿Cuantos espacios deseas desplazar?</label><br>
+            <div class="stylecontent"><label>Digite un número para cifrado/Descifrado:</label><br><br>
             <input type="number" id="valor" value="0" min="0"></div><br>
             <div><button type="submit" id="encode" value=""><img src="../imagenes/bloqueado.png" width="" height=""/>Cifrar</button>
             <button type="submit" id="decode" value=""><img src="../imagenes/desbloqueado.png" width="" height=""/>Descifrar</button></div><br>
             <div class="contenedorResultado">
-            <div class="stylecontent"><label>Resultados</label><br><br>
+            <div class="stylecontent"><label>Texto Cifrado/Descifrado:</label><br><br>
             <textarea name="" id="result" placeholder="Texto Cifrado o Descifrado"></textarea></div>
             </div>
           </div>
