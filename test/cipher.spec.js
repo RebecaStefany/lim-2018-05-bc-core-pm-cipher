@@ -56,12 +56,12 @@ describe('cipher', () => {
       assert.equal(typeof withOffset.decode, 'function');
     });
 
-    it('funciona', () => {
+    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
       const withOffset = cipher.createCipherWithOffset(33)
       assert.equal(withOffset.encode('ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 'HIJKLMNOPQRSTUVWXYZABCDEFG');
     });
 
-    it('funciona', () => {
+    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
       const withOffset = cipher.createCipherWithOffset(33)
       assert.equal(withOffset.decode('HIJKLMNOPQRSTUVWXYZABCDEFG'), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
