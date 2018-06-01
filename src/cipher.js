@@ -1,4 +1,5 @@
 window.cipher = {
+  //FUNCIÓN CIFRADO
   encode: (offset, string) => {
     let cifrado = '';
     offset = offset % 26;
@@ -17,7 +18,7 @@ window.cipher = {
     }
     return cifrado;
   },
-
+  //FUNCIÓN DECODE
   decode: (offset, string) =>{
     let descifrado = '';
     offset = offset % 26;
