@@ -60,21 +60,18 @@ Se realiza entrevistas para entender la necesidad del usuario, se concluye que
 la necesidad del usuario es ocultar sus mensajes por ende se realiza bosquejos 
 de como sería nuestro producto final la cual interactuará con el usuario.
 
-[Bosquejo 1] 
 
 ### Diseño del prototipo
 
 Despues de indagar sobre la necesidad y las entrevistas del usuario, se diseña el 
 prototipo y las interaciones que tendrá nuestra app.
 
-[Bosquejo 2]
 
 ### Prototipado para el usuario Final
 
 Despues de entender y analizar la problemática del usuario, se realiza el prototipado 
 de nuestra app para el usuario Final.
 
-[Bosquejo 3]
 
 ### Configuración para nuestra app
 
