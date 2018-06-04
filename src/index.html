@@ -4,63 +4,99 @@
     <meta charset="utf-8">
     <title>CaesarCipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic SC" rel="stylesheet">
-  </head>
+    
+    </head>
   <body>
+    <!--Contenedor Encabezado-->
     <header>
       <div class="content">
-        <div class="title"><label>¡CAESAR<span>Cipher!</span></label></div>
-        <div class="textbuscar">
-
-        </div>
-        
+        <div class="title"><label>CAESAR<span>Cipher</span></label></div>
       </div>
     </header>
-      <section>
-        <!--CONTENEDOR PRINCIPAL-->
-        <div id="contenedorPrincipal">
-          <!--CONTENEDOR DE INSTRUCCIONES DEL CIPHERCAESAR-->
-          <div class="intrucciones">
-                <div class="subtitle-info"><label>PASOS PARA <span>CIFRAR/DESCIFRAR</span></label></div><br>
-                <div class="info-left"><img src="../imagenes/one.png"/><label>INTRODUCE EL <span>TEXTO</span></label>
-                  <p>En la primera casilla (area de texto) introduce el mensaje que deseas cifrar/descifrar.</p>
-                </div>
-                <div class="info-right"><img src="../imagenes/two.png"/><label for="">INTRODUCE EL NÚMERO</label>
-                  <p>En la segunda casilla (número para cifrar/descifrar) digite el número para que tu cifrado empiece desde donde tu desees, o en el caso que desees descifrar, ingresar el digito que te han indicado.</p>
-                </div>
-                <div class="info-left"><img src="../imagenes/three.png"/><label for="">DALE CLICK</label>
-                  <p>Dale "click" en el botón según la actividad que desea realizar, cifrar o Descifrar el mensaje.</p>
-                </div>
-                <div class="info-right"><img src="../imagenes/four.png"/><label for="">COPIA EL TEXTO Y LISTO</label>
-                  
-                </div>
-          </div>
-
-          <!--CONTENEDOR DEL ÁREA DEL CIFRADO-->
-          <div class="contenido" >
-            <div class="subtitle">
-            <div class="titlecipher"><label for="">CIFRADO/DESCIFRADO</label></div>
-            </div><br>
-            <div class="stylecontent"><label>Ingrese el texto que desea Cifrar/Descrifrar:</label><br><br>
-            <textarea name="" id="text" placeholder="Ingrese su Texto a Cifrar o Descifrar"></textarea></div><br>
-            <div class="stylecontent"><label>Digite un número para cifrado/Descifrado:</label><br><br>
-            <input type="number" id="valor" value="0" min="0"></div><br>
-            <div><button type="submit" id="encode" value=""><img src="../imagenes/bloqueado.png" width="" height=""/>Cifrar</button>
-            <button type="submit" id="decode" value=""><img src="../imagenes/desbloqueado.png" width="" height=""/>Descifrar</button></div><br>
-            <div class="contenedorResultado">
-            <div class="stylecontent"><label>Texto Cifrado/Descifrado:</label><br><br>
-            <textarea name="" id="result" placeholder="Texto Cifrado o Descifrado"></textarea></div>
+    <section>
+        <!--Contenedor Principal de Intrucciones y Área de Cifrado-->
+        <div id="contenedorPrincipal"></div>
+          <div class="contenedor-info">
+            <!--Primer Contenedor-->
+            <div class="info-img"> 
+              <div class="title-caesar">CIFRANDO / <br>DESCIFRANDO TUS MENSAJES<br><span>CIPHER CAESAR</span></div>
+              <div class="info-p">
+                <p>Bienvenid@ a nuestra app donde cifrarás y descifrarás tus mensajes ultrasecretos, 
+                 te invitamos a que sigas los pasos a seguir. Y no te olvides de compartir a tus amigos este 
+                 divertido Juego.
+                </p>
+                <div><img src="../imagenes/female-detective.png"></div>
+              </div>     
+            </div>
+            <!--Segundo Contenedor-->            
+            <div class="intrucciones">
+              <div class="subtitle-info">
+                <label><br>PASOS PARA <br><span>CIFRAR / DESCIFRAR</span></label><br><br><br>
+              </div>
+              <div class="info-left">
+                <img src="../imagenes/one.png"/>&nbsp;&nbsp;
+                <label>INTRODUCE EL TEXTO</label><br>
+                <p>En la primera casilla (area de texto) introduce el mensaje que deseas cifrar/descifrar.</p>
+              </div><br>
+              <div class="info-left">
+                <img src="../imagenes/two.png"/>&nbsp;&nbsp;
+                <label for="">DIGITE EL NÚMERO</label><br>
+                <p>En la segunda casilla (número para cifrar/descifrar) digite el número para que tu cifrado empiece desde donde tu desees, o en el caso que desees descifrar, ingresar el digito que te han indicado.</p>
+              </div><br>
+              <div class="info-left">
+                <img src="../imagenes/three.png"/>&nbsp;&nbsp;
+                <label for="">DALE CLICK</label><br>
+                <p>Dale "click" en el botón según la actividad que desea realizar, Cifrar o Descifrar el mensaje.</p>
+              </div><br>
+              <div class="info-left">
+                <img src="../imagenes/four.png"/>&nbsp;&nbsp;
+                <label for="">COPIA EL TEXTO Y LISTO</label>
+                <p>Y listo tienes el texto Cifrado o Descifrado sefún sea el caso.</p>
+              </div>               
             </div>
           </div>
-        </div>
-        <!--ENLAZO CON EL JAVASCRIPT-->
+            <!--Contenedor de Button-->
+          <div class="open-Cipher" id="OpenCipher">
+            <input type="button" id="buttonOpen" value="HECHA UN VISTAZO"></input>
+          </div><br>                                          
+          <div id="view"></div><br><br>
+          <!--Contenedor de área de Cifrado/Descifrado-->
+          <div class="contenido" id="contenido" style="display:none">
+            <div class="subtitle">
+              <div class="titlecipher">
+                <label for=""><span>Mensaje</span><br></label>
+                <label for="">CIFRADO / DESCIFRADO</label>
+              </div>
+            </div><br>
+            <!--Contenedor de Ingreso de Texto a Cifrar/Descifrado-->
+            <div class="stylecontent">
+              <label>Ingrese el texto que desea Cifrar/Descrifrar:</label><br><br>
+              <textarea name="" id="text" placeholder="Ingrese su Texto a Cifrar o Descifrar"></textarea>
+            </div><br>
+            <!--Contenedor de Ingreso de Valor a desplazar-->
+            <div class="stylecontent">
+              <label>Digite un número para cifrado/Descifrado:</label><br><br>
+              <input type="number" id="valor" value="0" min="0">
+            </div><br>
+            <!--Contenedor de Botones de Cifrar/Descifrar-->
+            <div class="">
+              <button type="submit" id="encode" value="">
+                <img src="../imagenes/bloqueado.png" width="" height=""/>Cifrar
+              </button>&nbsp;&nbsp;&nbsp;
+              <button type="submit" id="decode" value="">
+                <img src="../imagenes/desbloqueado.png" width="" height=""/>Descifrar
+              </button>
+            </div><br>
+            <!--Contenedor del mensaje Cifrado/Descifrado-->
+            <div class="contenedorResultado">
+              <div class="stylecontent">
+                <label>Texto Cifrado/Descifrado:</label><br><br>
+                <textarea name="" id="result" placeholder="Texto Cifrado o Descifrado"></textarea>
+              </div>
+            </div>
+          </div>
         <script src="cipher.js"></script>
         <script src="index.js"></script>
       </section>
-      <button type="button" class="btn btn-outline-primary">Primary</button>
   </body>
 </html>

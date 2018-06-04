@@ -1,3 +1,16 @@
+
+/**Tipo de Letra que se esta usando en la app**/
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: #E6E6FA;
+}
+/**Cabecera**/
 .content {
     background: #4682B4;
     width: 100%;
@@ -5,191 +18,210 @@
 }
 .title {
     float: left;
-    font-family: 'Dancing Script';
+    font-family: 'Poiret One', cursive;
     font-size: 22px;
     text-align: left;
     font-size: 30px;
     line-height: 0.75;
     letter-spacing: 0.02em;
-    /*text-transform: uppercase;*/
     color:#E6E6FA;
     padding-top: 30px;
-    padding-left: 40px;
-   
-}
-.textcontent{
-    float: left;
-    padding-left: 50%;
-    text-align: right;
-    padding-top: 30px;
-
-}
-.textobuscar {
-    width: 50%;
-    float: left;
-    text-align: right;
-    padding-left: 50px;
-}
-.textobuscarp{
-    float: left;
-}
-.imagencontent{
-    float: left;
-    padding-top: 30px;
-}
-
-
-.title span {
-    color:	#DB7093;
+    padding-left: 8%;
     font-weight: bold;
-    background: rgba(120, 50, 91, 0.03);
+}
+.title span {
+    color:	#FFC0CB;
+    font-weight: bold;  
 }
 
+/**Contenedor de info-img**/
 
-body{ 
-    text-align: center; 
-}
-
-#contenedorPrincipal{ 
-    width: 100%;
-    height: 100%;
-    margin: 0 auto 0 auto; 
+.title-caesar{
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    padding-right: 8%;
+    padding-left: 15%;
+    font-weight: bold;
+ }
+ .title-caesar span{
+    font-size: 35px;
+    font-weight: bold;
+    color: #4682B4;
+ }
+.info-img{
     text-align: center;
-    background: #666666;
+    background:#E6E6FA;
+    color: #666666;
+    float: left;
+    width: 50%;
+    height: 500px;
+    padding-top: 5%;
 }
+.info-img img{
+    width: 300px;
+    padding-top: 40px;
+    padding-left: 10%;
+    
+}
+ .info-p p{
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 10%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: #808080;
+}
+
+
+/*Contenedor de Instrucciones*/
+
 .intrucciones{ 
-    padding-top: 30px;
-    height: 550px;
+    padding-top: 5%;
+    height: 500px;
     text-align: center;
     width: 50%;
     float: left; 
-    background: #E6E6FA;
-    
+    background: #E6E6FA;  
 }
 .subtitle-info{
-    font-family: 'Amatic SC';
-    font-size: 35px;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
     margin: 0;
     padding: 0;
-    text-align: right;
+    text-align: left;
     padding-right: 8%;
+    font-weight: bold;
+    color: #666666;
     
 }
 .subtitle-info span{
     font-size: 35px;
     font-weight: bold;
-    color: #E27799;
+    color: #4682B4;
 }
 
 .info-left{
     text-align: left;
-    padding-left: 8%;
+    padding-left: 5%;
+    color: #666666;
+
     
-}
-.info-left label{
-    font-family: 'Amatic SC';
-    font-size: 25px;
-    
-}
-.info-left p{
-    font-size: 16px;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    color: #808080;
-    padding-right: 8%;
 }
 .info-left img{
     width: 30px;
+    float: left;
 }
-.info-right{
-    text-align: right;
-    padding-right: 8%;
-}
-.info-right label{
-    font-family: 'Amatic SC';
-    font-size: 25px;
-    
-}
-.info-left span{
-    font-weight: bold;
-    
-}
-.info-right p{
-    font-size: 16px;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    padding-left: 8%;
-
-    color: #808080;
-}
-.info-right img{
-    
-    width: 30px;
-}
-
-.subtitle{
-    text-align: center;
-     
-}
-.subarea{
-    font-family: 'Amatic SC';
+.info-left label{
+    font-family: 'Poiret One', cursive;
     font-size: 20px;
-    padding-left: 1px;
-    color: #A9A9A9;
-
+    font-weight: bold;
+    
+    
 }
+.info-left p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: #808080;
+    padding-right: 15%;
+    padding-left: 10%;
+}
+
+/*Contenedor de area de Cifrado y Descifrado*/
+
 .titlecipher{
-    font-family: 'Amatic SC';
-    font-size: 35px;
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
     margin: 0;
-    padding-right: 10%;
-    color:  #DB7093;
-    text-align: right;
+    color:  #4682B4;
+    text-align: center;
     font-weight: bold;
 }
+.titlecipher span{
+    text-align: justify;
+    color: #666666;
+}
 
-.contenido{ 
-    font-family: 'Dosis', sans-serif;
-    height: 550px;
+.open-Cipher{
     text-align: center;
-    width: 50%;
-    float: left; 
-    /*text-transform: uppercase;*/
-    background: #F0FFF0;
-    padding-top: 30px;
+    background: #E6E6FA;
+    padding-top: 700px;
+}
+.contenido{ 
+    
+    font-family: 'Dosis', sans-serif;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    background: #E6E6FA;
+    padding: 0%;
+    padding-bottom:  50px;  
 }
 .stylecontent{
     font-family: 'Dosis', sans-serif;
-    font-size: 16px;
-    /*font-weight: bold;*/
-    color: 		#000000;
-       
+    font-size: 18px;
+    color: 		#666666;    
 }
-
 #text{
-    
     font-size: 14px;
-    background:#FDF5E6;
-    width: 70%;
+    background:#FFE4E1;
+    width: 40%;
     height: 80px;
-    font-family: 'Dosis', sans-serif;
+
 }
 #valor{
-    width: 30px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+    background-color:#4682B4;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #4682B4;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:'Dosis', sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	padding:6px 6px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    text-align: center;
 }
 #result{
     font-size: 14px;
-    background:#FDF5E6;
-    width: 70%;
+    background:#FFE4E1;
+    width: 40%;
     height: 80px;
-    font-family: 'Dosis', sans-serif;
 }
 
+#buttonOpen{
+padding: 10px;
+font-weight: 600;
+font-size: 20px;
+color: #FFC0CB;
+background-color: #4682B4;
+border-radius: 6px;
+border: 2px solid #4682B4;
+font-family: 'Poiret One', cursive;
+font-weight: bold;
+}
+#buttonOpen:hover{
+color: #4682B4;
+background-color: #E6E6FA;
 
-.pie{ 
-    background: #4682B4;
-    width: 100%;
-    height: 100%;
 }
 
 Button {
@@ -203,16 +235,16 @@ Button {
 	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
 	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
-	background-color:#ffffff;
+    background-color:#4682B4;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	border-radius:6px;
-	border:1px solid #dcdcdc;
+	border:1px solid #4682B4;
 	display:inline-block;
 	cursor:pointer;
 	color:#666666;
-	font-family:Arial;
-	font-size:15px;
+	font-family:'Dosis', sans-serif;
+	font-size:18px;
 	font-weight:bold;
 	padding:6px 24px;
 	text-decoration:none;
@@ -226,9 +258,10 @@ Button:hover {
 	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
 	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
-	background-color:#f6f6f6;
+	background-color:#4682B4;
 }
 Button:active {
 	position:relative;
 	top:1px;
 }
+
